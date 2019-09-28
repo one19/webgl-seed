@@ -48,5 +48,11 @@ As your project becomes more complex, you'll want to separate files and organize
 └─ 📃readme.md        # 📖 Read Me!
 ```
 
+Some key dependencies are:
+
+- [gl-matrix](http://glmatrix.net/) - WebGL's best linear algebra library, perfect for people used to linear algebra libraries like GLM or the built in GLSL data structures.
+
+- [Webpack](https://webpack.js.org/) - Compiles our TypeScript files and creates binaries for us to use.
+
 [license-img]: https://img.shields.io/:license-unlicense-blue.svg?style=flat-square
 [license-url]: https://unlicense.org/
