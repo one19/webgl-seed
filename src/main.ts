@@ -1,6 +1,6 @@
 import Renderer from './renderer';
 
-const node = document.getElementById('webgl');
+const node = document.getElementById('game');
 
 // 🏎️ Create rendering engine
 let renderer = new Renderer(node);
