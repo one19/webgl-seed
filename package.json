@@ -5,6 +5,7 @@
     "main": "dist/main.js",
     "scripts": {
         "start": "npm i & npm run build",
+        "dev": "webpack --watch webpack.config.js",
         "build": "webpack --config webpack.prod.js",
         "test": "ava"
     },
@@ -30,9 +31,9 @@
     "devDependencies": {
         "@types/gl-matrix": "^2.4.5",
         "clean-webpack-plugin": "^3.0.0",
-        "ts-loader": "^6.1.0",
+        "ts-loader": "^6.2.0",
         "typescript": "^3.6.3",
-        "webpack": "^4.40.2",
+        "webpack": "^4.41.0",
         "uglifyjs-webpack-plugin": "^2.2.0",
         "webpack-merge": "^4.2.2"
     }
