@@ -1,10 +1,10 @@
 import Renderer from './renderer';
 
-const node = document.getElementById('game') as HTMLCanvasElement;
+// this could also be wrapped inside the engine, if we don't expect this
+// canvas to ever be instantiated more than once??
+const canvasNode = document.getElementById('game') as HTMLCanvasElement;
 
-// 🏎️ Create rendering engine
-let renderer = new Renderer(node);
-console.log('rendnndndn', renderer, Object.keys(renderer), typeof renderer)
+const renderer = new Renderer(canvasNode);
+console.log('whaaaaa');
 
-// 🏁 Start your engine
-renderer.start(); // don't try to access nonexistent methods, kids
+renderer.start(); // or whatever
