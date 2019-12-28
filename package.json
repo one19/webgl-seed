@@ -4,7 +4,7 @@
     "description": "A seed repo for getting started with WebGL applications.",
     "main": "dist/main.js",
     "scripts": {
-        "start": "npm i & npm run build",
+        "start": "npm run build",
         "dev": "webpack --watch webpack.config.js",
         "build": "webpack --config webpack.prod.js",
         "test": "ava"
@@ -32,9 +32,9 @@
         "@types/gl-matrix": "^2.4.5",
         "clean-webpack-plugin": "^3.0.0",
         "ts-loader": "^6.2.0",
-        "typescript": "^3.6.3",
-        "webpack": "^4.41.0",
+        "typescript": "^3.7.4",
         "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^4.41.0",
         "webpack-merge": "^4.2.2"
     }
 }
