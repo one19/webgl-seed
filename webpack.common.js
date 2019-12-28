@@ -1,6 +1,5 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,7 +8,6 @@ module.exports = {
     app: './main.ts'
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new CopyPlugin([
       { from: '*.{css,html}', to: '[name].[ext]' }
     ]),
