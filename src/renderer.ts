@@ -25,4 +25,31 @@ export default class Renderer {
     this.gl.cullFace(this.gl.BACK);
     this.gl.blendFunc(this.gl.SRC_ALPHA, this.gl.ONE_MINUS_SRC_ALPHA);
   }
+
+  makeTriangle = () => {
+    const positions = new Float32Array([
+    /* x     y     z   */
+      1.0,  1.0,  0.0, // point 1
+     -1.0,  1.0,  0.0, // point 2
+      0.0, -1.0,  0.0, // point 3
+    ]);
+
+    const colors = new Float32Array([
+    /* r     g     b */
+      1.0,  0.0,  0.0, // point 1
+      0.0,  1.0,  0.0, // point 2
+      0.0,  0.0,  1.0, // point 3
+    ]);
+
+    // for some reason, we declare buffer handles as null before using them????
+    // until I see why, I'm not doing it.
+    const positionVBO = this.gl.createBuffer();
+    this.gl.bindBuffer(this.gl.ARRAY_BUFFER, positionVBO);
+    this.gl.bufferData(this.gl.ARRAY_BUFFER, positions, this.gl.STATIC_DRAW);
+
+    // IN THE GUIDE IT WAS GENBUFFER WTF DUDE
+    const colorVBO = this.gl.createBuffer();
+    this.gl.bindBuffer(this.gl.ARRAY_BUFFER, colorVBO);
+    this.gl.bufferData(this.gl.ARRAY_BUFFER, colors, this.gl.STATIC_DRAW);
+  }
 }
