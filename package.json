@@ -1,40 +1,41 @@
 {
-    "name": "webgl-seed",
-    "version": "1.0.0",
-    "description": "A seed repo for getting started with WebGL applications.",
-    "main": "dist/main.js",
-    "scripts": {
-        "start": "npm run build",
-        "dev": "webpack --watch webpack.config.js",
-        "build": "webpack --config webpack.prod.js",
-        "test": "ava"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/alaingalvan/webgl-seed.git"
-    },
-    "keywords": [
-        "webgl",
-        "example",
-        "seed",
-        "repo"
-    ],
-    "author": "Alain Galvan",
-    "license": "Unlicense",
-    "bugs": {
-        "url": "https://github.com/alaingalvan/webgl-seed/issues"
-    },
-    "homepage": "https://github.com/alaingalvan/webgl-seed#readme",
-    "dependencies": {
-        "gl-matrix": "^3.1.0"
-    },
-    "devDependencies": {
-        "@types/gl-matrix": "^2.4.5",
-        "clean-webpack-plugin": "^3.0.0",
-        "ts-loader": "^6.2.0",
-        "typescript": "^3.7.4",
-        "uglifyjs-webpack-plugin": "^2.2.0",
-        "webpack": "^4.41.0",
-        "webpack-merge": "^4.2.2"
-    }
+  "name": "@one19/webgl-seed",
+  "version": "0.0.0",
+  "description": "A seed repo for getting started with WebGL applications.",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack --watch --config webpack.common.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/one19/webgl-seed.git"
+  },
+  "keywords": [
+    "example",
+    "webgl",
+    "seed",
+    "repo"
+  ],
+  "author": "Alain Galvan",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/one19/webgl-seed/issues"
+  },
+  "homepage": "https://github.com/one19/webgl-seed#readme",
+  "dependencies": {
+    "gl-matrix": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/gl-matrix": "^2.4.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.7.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  }
 }
