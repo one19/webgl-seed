@@ -5,6 +5,5 @@ import Renderer from './renderer';
 const canvasNode = document.getElementById('game') as HTMLCanvasElement;
 
 const renderer = new Renderer(canvasNode);
-console.log('whaaaaa');
 
 renderer.start(); // or whatever
